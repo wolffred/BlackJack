@@ -47,7 +47,7 @@ public class Deck {
 //    }
 
     public void shuff(List<NewCard> newCardList){
-        Collections.shuffle(newCardList);
+         Collections.shuffle(newCardList);
     }
 
 

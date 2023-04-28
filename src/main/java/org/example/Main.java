@@ -16,6 +16,9 @@ public class Main {
         System.out.println(deck1.generateCards(deckOfCards));
 
 
+        deck1.shuff(deckOfCards);
+
+
         deck1.setNewCardList(deckOfCards);
 
 
@@ -26,6 +29,7 @@ public class Main {
 
         int numberOfPlayers = input.nextInt();
         List<Player> players = new ArrayList<>();
+
 
         if(numberOfPlayers > 0 && numberOfPlayers <=6){
             for(int i = 1; i <= numberOfPlayers; i++){
@@ -94,6 +98,7 @@ public class Main {
                 players.get(i).setDisqualified(true);
             }
         }
+        System.out.println("Are all stuck " + allStuckTrue);
 
         System.out.println("");
         System.out.println("");
